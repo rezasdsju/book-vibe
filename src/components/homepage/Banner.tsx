@@ -17,7 +17,7 @@ const Banner = () => {
 
                     <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight text-gray-900">
                         Books to freshen up{" "}
-                        <span className="bg-gradient-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent">
+                        <span className="bg-linear-to-r from-emerald-500 to-teal-600 bg-clip-text text-transparent">
                             your bookshelf
                         </span>
                     </h2>
@@ -38,7 +38,7 @@ const Banner = () => {
 
                 {/* Image */}
                 <div className="mx-auto relative group">
-                    <div className="absolute inset-0 bg-gradient-to-tr from-emerald-400 to-teal-500 rounded-3xl rotate-6 group-hover:rotate-3 transition-transform duration-500 opacity-20" />
+                    <div className="absolute inset-0 bg-linear-to-tr from-emerald-400 to-teal-500 rounded-3xl rotate-6 group-hover:rotate-3 transition-transform duration-500 opacity-20" />
                     <Image
                         src={HeroImage}
                         alt="Hero Image"
