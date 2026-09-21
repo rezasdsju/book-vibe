@@ -1,9 +1,8 @@
-import React from 'react';
-
+import Banner from "@/components/homepage/Banner";
 const page = () => {
   return (
     <div>
-      Homepage
+      <Banner></Banner>
     </div>
   );
 };
