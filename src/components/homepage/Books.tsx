@@ -1,3 +1,4 @@
+import { IBook } from "@/types/books.types"
 import BookCard from "../shared/BookCard"
 
 const getBooks = async()=>{
@@ -14,7 +15,7 @@ const Books = async() => {
             <h2 className="font-bold text-4xl text-center">Popular Books</h2>
             <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4'>
                 {
-                    booksData.map(book=> book.rating>4.5 && <BookCard key={book.bookId} book={book}></BookCard>)
+                    booksData.map((book:IBook)=> book.rating>4.5 && <BookCard key={book.bookId} book={book}></BookCard>)
                 }
             </div>
         </div>

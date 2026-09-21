@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
-const BookCard = ({book}) => {
+import { IBook } from "@/types/books.types";
+const BookCard = ({book}:{book:IBook}) => {
     return (
         <div className="group overflow-hidden rounded-2xl border border-base-200 bg-base-100 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
 
