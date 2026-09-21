@@ -1,5 +1,5 @@
 import { IBook } from "@/types/books.types";
-
+import ReadButton from "@/components/bookDetails/ReadButton";
 import Image from "next/image";
 const BookDetailPage = async ({ params }: { params: Promise<{ id: string }> }) => {
     const { id } = await params
@@ -85,8 +85,8 @@ const BookDetailPage = async ({ params }: { params: Promise<{ id: string }> }) =
                         </div>
                     </div>
                     <div className="flex justify-center items-center gap-4">
-                        <button className="btn btn-primary">Add to Read</button>
-                        <button className="btn btn-info">Add to Wish List</button>
+                        <ReadButton book={book}></ReadButton>
+                        <button className="btn btn-info">Wish List</button>
 
                     </div>
                 </div>
