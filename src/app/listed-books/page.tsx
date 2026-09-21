@@ -3,10 +3,11 @@ import { BooksContext } from "@/context/BooksContext";
 import { useContext } from "react";
 
 const ListedBooks = () => {
-    const {readBooks} = useContext(BooksContext)
+    const {readBooks, wishList} = useContext(BooksContext)
     return (
         <div>
-            listed Books: {readBooks.length}
+            listed Books: {readBooks.length} <br />
+            wishList: {wishList.length}
         </div>
     );
 };

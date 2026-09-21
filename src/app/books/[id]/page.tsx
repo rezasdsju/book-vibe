@@ -1,6 +1,7 @@
 import { IBook } from "@/types/books.types";
 import ReadButton from "@/components/bookDetails/ReadButton";
 import Image from "next/image";
+import WishListButton from "@/components/bookDetails/WishListButton";
 const BookDetailPage = async ({ params }: { params: Promise<{ id: string }> }) => {
     const { id } = await params
     const res = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/booksData.json`)
@@ -86,7 +87,7 @@ const BookDetailPage = async ({ params }: { params: Promise<{ id: string }> }) =
                     </div>
                     <div className="flex justify-center items-center gap-4">
                         <ReadButton book={book}></ReadButton>
-                        <button className="btn btn-info">Wish List</button>
+                        <WishListButton book={book}></WishListButton>
 
                     </div>
                 </div>
