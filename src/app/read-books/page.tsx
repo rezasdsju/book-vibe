@@ -76,7 +76,7 @@ readBooks.length>0? <BarChart
       <Bar dataKey="pages" shape={TriangleBar} activeBar>
         <LabelList content={CustomColorLabel} position="top" />
       </Bar>
-    </BarChart>: <p className='text-center text-2xl'>No Read Books</p>
+    </BarChart>: <p className='text-center text-2xl '>No Read Books</p>
 }
     </div>
   );
