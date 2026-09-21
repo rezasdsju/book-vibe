@@ -57,7 +57,8 @@ export default function CustomShapeBarChart() {
     })
   return (
     <div className='py-10'>
-<BarChart
+{
+readBooks.length>0? <BarChart
       style={{ width: '100%', maxWidth: '700px', maxHeight: '70vh', aspectRatio: 1.618 }}
       responsive
       data={data}
@@ -75,7 +76,8 @@ export default function CustomShapeBarChart() {
       <Bar dataKey="pages" shape={TriangleBar} activeBar>
         <LabelList content={CustomColorLabel} position="top" />
       </Bar>
-    </BarChart>
+    </BarChart>: <p className='text-center text-2xl'>No Read Books</p>
+}
     </div>
   );
 }
